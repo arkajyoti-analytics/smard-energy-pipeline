@@ -1,0 +1,6 @@
+version: 2
+sources:
+  - name: smard_raw
+    tables:
+      - name: energy_hourly
+        description: Append-only raw load from ingest/smard_ingest.py (long format).

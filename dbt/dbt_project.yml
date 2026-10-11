@@ -1,0 +1,11 @@
+name: smard_energy
+version: "1.0.0"
+config-version: 2
+profile: smard_energy
+model-paths: ["models"]
+models:
+  smard_energy:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table

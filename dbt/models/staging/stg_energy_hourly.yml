@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: stg_energy_hourly
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [series_key, ts_utc]
+    columns:
+      - name: value
+        data_tests: [not_null]
